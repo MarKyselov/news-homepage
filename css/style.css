@@ -1,0 +1,287 @@
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.inter-extra-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+body {
+    padding-bottom: 130px;
+    height: fit-content;
+}
+
+.container {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.hero {
+    max-width: 730px;
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/images/image-web-3-desktop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header {
+    padding-top: 90px;
+    padding-bottom: 55px;
+}
+
+.fbx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+ul.fbx {
+    column-gap: 40px;
+}
+
+li {
+    font-size: 15px;
+    line-height: 26px;
+    color: #5E607A;
+}
+
+main {
+    margin-bottom: 70px;
+}
+
+main article {
+    max-width: 730px;
+    row-gap: 28px;
+}
+
+main aside {
+    max-width: 350px;
+}
+
+main article img {
+    margin-bottom: 28px;
+}
+
+main article h1 {
+    font-size: 56px;
+    line-height: 56px;
+    color: #00001A;
+    flex-basis: 350px;
+}
+
+main article div:not(.hero) {
+    flex-basis: 350px;
+}
+
+main article p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #5E607A;
+    margin-bottom: 30px;
+}
+
+main article a {
+    text-transform: uppercase;
+    width: 185px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F15D51;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4.375px;
+    color: #00001A;
+    transition: all 0.5s ease;
+}
+
+main article a:hover {
+    background-color: #00001A;
+    color: #FFFDFA;
+}
+
+aside.fbx {
+    flex-direction: column;
+    width: 350px;
+    height: fit-content;
+    background-color: #00001A;
+    padding: 32px 24px;
+    align-items: flex-start;
+    row-gap: 30px;
+}
+
+aside h2 {
+    font-size: 40px;
+    line-height: 40px;
+    color: #E9AA52;
+
+}
+
+aside h3 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFDFA;
+    margin-bottom: 8px;
+}
+
+aside p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #C5C6CE;
+}
+
+hr {
+    border-color: #5E607A;
+}
+
+footer article.fbx {
+    flex-basis: 350px;
+    align-items: flex-start;
+}
+
+footer article img {
+    width: 100px;
+    height: 127px;
+}
+
+footer article div {
+    flex-basis: 226px;
+}
+
+footer h2 {
+    font-size: 32px;
+    line-height: 32px;
+    color: #F15D51;
+    margin-bottom: 12px;
+}
+
+footer a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #00001A;
+    transition: all 0.5s ease;
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+footer a:hover,
+header a:hover {
+    color: #F15D51;
+}
+
+footer p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #5E607A;
+}
+
+@media(max-width:768px) {
+    html {
+        display: flex;
+        justify-content: center;
+    }
+body{
+    padding-bottom: 80px;
+}
+    .container {
+        max-width: 379px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    header {
+        padding-top: 28px;
+        padding-bottom: 32px;
+        width: 343px;
+    }
+
+    header img {
+        width: 44px;
+        height: 28px;
+    }
+
+    header ul.fbx {
+        display: none;
+    }
+
+    main {
+        margin-bottom: 64px;
+    }
+
+    main article.fbx {
+        /* flex-direction: column; */
+        /* height: 636px; */
+        row-gap: 16px;
+        margin-bottom: 64px;
+        justify-content: center;
+    }
+
+    main article h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .hero {
+        width: 343px;
+        height: 300px;
+        /* margin-bottom: 24px; */
+        background-image: url(../assets/images/image-web-3-mobile.jpg);
+        margin-bottom: 8px;
+    }
+
+    main h1 {
+        width: 343px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    main p {
+        width: 343px;
+        margin-bottom: 8px;
+    }
+
+    main aside.fbx {
+        padding-bottom: 24px;
+        width: 343px;
+    }
+
+    aside h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    aside p {
+        width: 302px;
+    }
+
+    footer {
+        row-gap: 32px;
+    }
+}
